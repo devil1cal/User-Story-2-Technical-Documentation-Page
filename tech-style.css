@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*--onclick menu-- not working*
+.onclick-header{
+  position: relative;
+  display: inline-block;
+  border: 1px solid gray;
+  background-color: gray;
+  background-image: url(http://s.filesonload.ru/img/icons-catforce/23.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.onclick-header::before{
+  content:  url(http://s.filesonload.ru/img/icons-catforce/23.png);
+}
+
+.onclick-header:focus{
+pointer-events: none;
+
+
+}
+.onclick-header:focus .header-menu-content{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.header-menu-content{
+  position: absolute;
+  z-index:1;
+  display: none;
+  visibility: hidden;
+  transition: visibility 1s;
+  opacity: 0.5;
+*/
+.main-doc{
+  display: flex;
+  flex-direction: column;
+  min-width: 768px;
+  min-height: 946px;
+  width: 100%;
+  height: auto;
+}
