@@ -3,98 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*--onclick menu-- not working*
-.onclick-header{
-  position: relative;
-  display: inline-block;
-  border: 1px solid gray;
-  background-color: gray;
-  background-image: url(http://s.filesonload.ru/img/icons-catforce/23.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-}
-.onclick-header::before{
-  content:  url(http://s.filesonload.ru/img/icons-catforce/23.png);
-}
-
-.onclick-header:focus{
-pointer-events: none;
-
-
-}
-.onclick-header:focus .header-menu-content{
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-.header-menu-content{
-  position: absolute;
-  z-index:1;
-  display: none;
-  visibility: hidden;
-  transition: visibility 1s;
-  opacity: 0.5;
-*//*
-.sidebar{
-  grid-area:sidebar;
-
-}
-.header{
+.grid1{
+  background-color: :lightSkyBlue;
+  grid-row:1/1;
   grid-area: header;
 
 }
-.content{
+.grid2{
+  background-color: lightsalmon;
+  grid-row: 1/2;
   grid-area: content;
 
 }
-.footer{
+.grid3{
+  background-color: lightpink;
+  grid-row:2/2;
+  grid-column:2/2;
   grid-area: footer;
 
 }
-
-.grid-template{
+.grid_master{
   display: grid;
+  grid-template-rows: 25% 75%;
+  grid-gap: 10px;
   grid-template-areas:
-  "sidebar header header"
-  "sidebar content content"
-  "footer footer footer";
-  grid-gap: 10px;
-  grid-template-columns: 120px 120px 120px;
-  background-color: #fff;
-  color: #444;
-  grid-gap: 10px;
-}
-*/
-#main-doc{
-  background-color: grey;
-}
-.main-doc{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-width: 250px;
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  border:1px solid black;
-  border-radius: 0;
-  background-color: grey;
+     "header content"
+     "footer footer ";
 }
 
-.main-section{
+.sidebar{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border:1px solid red;
+
+}
+.main_map{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-left:2%;
-  margin-right: 2%;
-  height: auto;
-  border:1px solid red;
-}
-.introduction{
-  min-width: 400px;
-  height: auto;
-  width: auto;
-  
+  border:1px solid green;
+
 }
