@@ -15,42 +15,47 @@
       <div id="header" class="header" tabindex="0">
         <nav>
           <ul class="header-menu-content">
-            <li><a href="#introduction">Inroduction</a></li>
-            <li><a href="#history">history</a>
-              <ul>
-                <li><a href="#common-templates">Common templates</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#introduction">Inroduction</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#history">history</a>
+              <ul class="sub-nav-list">
+                <li class="nav-li"><a class="nav-menu" href="#common-templates">Common templates</a></li>
               </ul>
             </li>
-            <li><a href="#examples">examples</a></li>
-            <li><a href="#usage">usage</a></li>
-            <li><a href="#benefits">benefits</a></li>
-            <li><a href="#limitations">limitations</a></li>
-            <li><a href="#relationship">Relationship and Usage of User Stories to Epics, Themes, Initiatives</a></li>
-            <li><a href="#story-map">Story map</a></li>
-            <li><a href="#comparing">Comparing with use cases</a></li>
-            <li><a href="#referances">referances</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#examples">examples</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#usage">usage</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#benefits">benefits</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#limitations">limitations</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#relationship">Relationship and Usage of User Stories to Epics, Themes, Initiatives</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#story-map">Story map</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#comparing">Comparing with use cases</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#referances">referances</a></li>
           </ul>
       </div>
     </section>
-     <div class="main_map grid2">
+    <div class="main_map grid2">
       <section class="main-section">
         <div id="introduction" class="introduction">
-          <p class="intro-parag">In software development and product management, a user story is an informal, natural language description of one or more features of a software system. User stories are often written from the perspective of an end
-            user or user of a system. They are often recorded on index cards, on Post-it notes, or in project management software.</p>
-          </br>
-          <p class="intro-parag">Depending on the project, user stories may be written by various stakeholders including clients, users, managers or development team members. User stories are a type of boundary object. They facilitate sensemaking
-            and communication, that is, they help software teams organize their understanding of the system and its context.</p>
-          </br>
-          <p class="intro-parag">User stories are often confused with system requirements. A requirement is a formal description of need; a user story is an informal description of a feature.</p>
+          <h1 class="main-title">User story</h1>
+          <div class="main-articles">
+            <p class="intro-parag">In software development and product management, a user story is an informal, natural language description of one or more features of a software system. User stories are often written from the perspective of an end
+              user or user of a system. They are often recorded on index cards, on Post-it notes, or in project management software.</p>
+            </br>
+            <p class="intro-parag">Depending on the project, user stories may be written by various stakeholders including clients, users, managers or development team members. User stories are a type of boundary object. They facilitate sensemaking
+              and communication, that is, they help software teams organize their understanding of the system and its context.</p>
+            </br>
+            <p class="intro-parag">User stories are often confused with system requirements. A requirement is a formal description of need; a user story is an informal description of a feature.</p>
+          </div>
         </div>
       </section>
+
       <section class="main-section">
         <div id="history" class="history">
           <div>
-            <h2>history</h2>
-            <p class="history-parag">In 1998 Alistair Cockburn visited the Chrysler C3 project in Detroit and coined the phrase "A user story is a promise for a conversation."
-              With Extreme Programming (XP), user stories were a part of the planning game.
-              In 2001, Ron Jeffries proposed a "Three Cs" formula for user story creation:</p>
+            <h2 class="sub-title">history</h2>
+            <div class="main-articles">
+              <p class="history-parag">In 1998 Alistair Cockburn visited the Chrysler C3 project in Detroit and coined the phrase "A user story is a promise for a conversation."
+                With Extreme Programming (XP), user stories were a part of the planning game.
+                In 2001, Ron Jeffries proposed a "Three Cs" formula for user story creation:</p></div>
           </div>
           </br>
           <div class="history-list">
@@ -61,166 +66,235 @@
             </ul>
           </div>
           </br>
-          <div>
+          <div><div class="main-articles">
             <p class="history-parag"> User stories are written by or for users or customers to influence the functionality of the system being developed. In some teams, the product manager (or product owner in Scrum), is primarily responsible for
-              formulating user stories and organizing them into a product backlog. In other teams, anyone can write a user story. User stories can be developed through discussion with stakeholders, based on personas or simply made up.</p>
+              formulating user stories and organizing them into a product backlog. In other teams, anyone can write a user story. User stories can be developed through discussion with stakeholders, based on personas or simply made up.</p></div>
+
+
           </div>
           </br>
           <div id="common-templates" class="common-templates">
             <h3>Common templates</h3>
             <div class="common-table">
-              <dl>
-                <dt>User stories may follow one of several formats or templates. The most common would be the Connextra template:</dt>
-                <dd>As a &#60;role&#62; I can &#60;capability &#62;, so that &#60;receive benefit&#62;</dd>
-                </br>
-                <dt>Chris Matts suggested that "hunting the value" was the first step in successfully delivering software, and proposed this alternative:</dt>
-                <dd>In order to &#60;receive benefit&#62; as a &#60;role&#62;, I can &#60;goal/desire&#62; </dd>
-                </br>
-                <dt>Elias Weldemichael, on the other hand, suggested the "so that" clause is perhaps optional although still often helpful:</dt>
-                <dd>As a &#60;role&#62;, I can &#60;goal/desire&#62;, so that &#60; why&#62;</dd>
-                </br>
-                <dt>Another template based on the Five Ws specifies</dt>
-                <dd>As &#60;who&#62; &#60;when&#62; &#60;where&#62;, I &#60;want&#62; because &#60;why&#62;</dd>
-                <dt>Another template based on Rachel Davies' popular template</dt>
-                <dd>As &#60;persona&#62;, I can &#60;what?&#62; so that &#60;why?&#62;</dd>
-                </br>
-                <dt>where a persona is a fictional stakeholder (e.g. user). A persona may include a name, picture; characteristics, behaviors, attitudes, and a goal which the product should help them achieve.</dt>
-              </dl>
+
+
+                  <div class="main-articles"><p >User stories may follow one of several formats or templates. The most common would be the Connextra template:</p></div>
+                  <code>As a &#60;role&#62; I can &#60;capability &#62;, so that &#60;receive benefit&#62;</code>
+
+                  <div class="main-articles"><p>Chris Matts suggested that "hunting the value" was the first step in successfully delivering software, and proposed this alternative:</p></div>
+                  <code>In order to &#60;receive benefit&#62; as a &#60;role&#62;, I can &#60;goal/desire&#62; </code>
+
+                  <div class="main-articles"><p>Elias Weldemichael, on the other hand, suggested the "so that" clause is perhaps optional although still often helpful:</p></div>
+                  <code>As a &#60;role&#62;, I can &#60;goal/desire&#62;, so that &#60; why&#62;</code>
+
+                  <div class="main-articles"><p>Another template based on the Five Ws specifies</p></div>
+                  <code>As &#60;who&#62; &#60;when&#62; &#60;where&#62;, I &#60;want&#62; because &#60;why&#62;</code>
+
+                  <div class="main-articles"><p>Another template based on Rachel Davies' popular template</p></div>
+                  <code>As &#60;persona&#62;, I can &#60;what?&#62; so that &#60;why?&#62;</code>
+
+                  <div class="main-articles"><p>where a persona is a fictional stakeholder (e.g. user). A persona may include a name, picture; characteristics, behaviors, attitudes, and a goal which the product should help them achieve.</p></div>
+
 
             </div>
           </div>
       </section>
+
       <section class="main-section">
         <div id="examples" class="examples">
-          <h2>examples</h2>
-          <div class="epic-story">
-            <h3>Screening Quiz (Epic Story)</h3>
-            <p class="epic-story-parag">As the HR manager, I want to create a screening quiz so that I can understand whether I want to send possible recruits to the functional manager.</p>
-          </div>
-          </br>
-          <div class="quiz-recall">
-            <h3>Quiz Recall</h3>
-            <p class="quiz-recall-parag">As a manager, I want to browse my existing quizzes so I can recall what I have in place and figure out if I can just reuse or update an existing quiz for the position I need now.</p>
-          </div>
-          </br>
-          <div class="limited-backup">
-            <h3>Limited Backup</h3>
-            <p class="limited-backup">As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.</p>
-          </div>
+          <h2 class="sub-title">examples</h2>
+
+            <div class="epic-story">
+              <h3>Screening Quiz (Epic Story)</h3>
+            <div class="main-articles">  <p class="epic-story-parag">As the HR manager, I want to create a screening quiz so that I can understand whether I want to send possible recruits to the functional manager.</p></div>
+            </div>
+            </br>
+            <div class="quiz-recall">
+              <h3>Quiz Recall</h3>
+              <div class="main-articles"><p class="quiz-recall-parag">As a manager, I want to browse my existing quizzes so I can recall what I have in place and figure out if I can just reuse or update an existing quiz for the position I need now.</p></div>
+            </div>
+            </br>
+            <div class="limited-backup">
+              <h3>Limited Backup</h3>
+              <div class="main-articles"><p class="limited-backup">As a user, I can indicate folders not to backup so that my backup drive isn't filled up with things I don't need saved.</p></div>
+
         </div>
-      </section>
-      <section class="main-section">
-        <div id="ssage" class="usage">
-          <h2>Usage</h2>
-          <p class="usage-parag">As a central part of many agile development methodologies, such as in XP's planning game, user stories define what has to be built in the software project. User stories are prioritized by the customer (or the product
-            owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.</p>
-          </br>
-          <p class="usage-parag">When user stories are about to be implemented, the developers should have the possibility to talk to the customer about it. The short stories may be difficult to interpret, may require some background knowledge or
-            the requirements may have changed since the story was written.</p>
-          </br>
-          <p class="usage-parag">Every user story must at some point have one or more acceptance tests attached, allowing the developer to test when the user story is done and also allowing the customer to validate it. Without a precise formulation
-            of the requirements, prolonged nonconstructive arguments may arise when the product is to be delivered.</p>
-        </div>
-      </section>
-      <section class="main-section">
-        <div id="benefits" class="benefits">
-          <h2>benefits</h2>
-          <p class="benefit-parag">There is no good evidence that using user stories increases software success or developer productivity. However, user stories facilitate sensemaking without undue problem structuring, which is linked to success</p>
-        </div>
-      </section>
-      <section class="main-section">
-        <div id="limitations" class="limitations">
-          <h2>Limitations</h2>
-          <p class="limitation-parag"> Limitations of user stories include:</p>
+    </div>
+    </section>
+
+    <section class="main-section">
+      <div id="ssage" class="usage">
+        <h2 class="sub-title">Usage</h2>
+
+          <div class="main-articles"><p class="usage-parag">As a central part of many agile development methodologies, such as in XP's planning game, user stories define what has to be built in the software project. User stories are prioritized by the customer (or the product
+            owner in Scrum) to indicate which are most important for the system and will be broken down into tasks and estimated by the developers. One way of estimating is via a Fibonacci scale.</p></div>
+
+          <div class="main-articles"><p class="usage-parag">When user stories are about to be implemented, the developers should have the possibility to talk to the customer about it. The short stories may be difficult to interpret, may require some background knowledge or
+            the requirements may have changed since the story was written.</p></div>
+
+          <div class="main-articles"> <p class="usage-parag">Every user story must at some point have one or more acceptance tests attached, allowing the developer to test when the user story is done and also allowing the customer to validate it. Without a precise formulation
+            of the requirements, prolonged nonconstructive arguments may arise when the product is to be delivered.</p></div>
+
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div id="benefits" class="benefits">
+        <h2 class="sub-title">benefits</h2>
+
+          <div class="main-articles"><p class="benefit-parag">There is no good evidence that using user stories increases software success or developer productivity. However, user stories facilitate sensemaking without undue problem structuring, which is linked to success</p></div>
+
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div id="limitations" class="limitations">
+        <h2 class="sub-title">Limitations</h2>
+
+          <div class="main-articles"><p class="limitation-parag"> Limitations of user stories include:</p></div>
           <div>
             <h4>Scale-up problem</h4>
-
-            <p class="limitation-parag">User stories written on small physical cards are hard to maintain, difficult to scale to large projects and troublesome for geographically distributed teams.</p>
+            <div class="main-articles"><p class="limitation-parag">User stories written on small physical cards are hard to maintain, difficult to scale to large projects and troublesome for geographically distributed teams.</p></div>
           </div>
-        </div>
-        <h4>Vague, informal and incomplete</h4>
-        </br>
-        <p class="limitation-parag">User story cards are regarded as conversation starters. Being informal, they are open to many interpretations. Being brief, they do not state all of the details necessary to implement a feature. Stories are
-          therefore inappropriate for reaching formal agreements or writing legal contracts.</p>
-          <div>
-            <h4>Lack of non-functional requirements</h4>
-          </br>
-          <p class="limitation-parag">User stories rarely include performance or non-functional requirement details, so non-functional tests (e.g. response time) may be overlooked.</p>
-        </div>
-      </section>
-      <section class="main-section">
-        <div id="relationship" class="relationship">
-          <h2>Relationship and Usage of User Stories to Epics, Themes, Initiatives</h2>
-          <p class="relation-parag">In many contexts user stories are used and also summarized in groups for semantic and organizational reasons. The different usages depend on the point-of-view, e.g. either looking from a user perspective as product owner in relation to features or a company perspective in relation to task organization.</p>
-        </br>
-          <p class="relation-parag">While some suggest to use 'epic' and 'theme' as labels for any thinkable kind of grouping of user stories, organization management tends to use it for strong structuring and uniting work loads. For instance, Jira, seems to use a hierarchically organized to-do-list, in which they named the first level of to-do-tasks 'user-story', the second level 'epics' ( grouping of user stories ) and the third level 'initiatives' ( grouping of epics ).</p>
-        </br>
-          <p class="relation-parag">However, initiatives are not always present in product management development and just add another level of granularity. In Jira, 'themes' exist ( for tracking purposes ) that allow to cross-relate and group items of different parts of the fixed hierarchy. </p>
-          <p class="relation-parag"> In this usage, Jira, shifts the meaning of themes in an organization perspective: e.g how much time did we spent on developing theme "xyz". But another definition of themes is: a set of big group of stories, epics, features etc for a user that forms a common semantic unit or goal. There is probably not a common definition because different approaches exist for different styles of product design and development. In these sense, some also suggest to not use any kind of hard groups and hierarchies. </p>
+      </div>
+      <h4>Vague, informal and incomplete</h4>
+
+      <div class="main-articles"><p class="limitation-parag">User story cards are regarded as conversation starters. Being informal, they are open to many interpretations. Being brief, they do not state all of the details necessary to implement a feature. Stories are
+        therefore inappropriate for reaching formal agreements or writing legal contracts.</p></div>
+      <div>
+        <h4>Lack of non-functional requirements</h4>
+
+        <div class="main-articles"><p class="limitation-parag">User stories rarely include performance or non-functional requirement details, so non-functional tests (e.g. response time) may be overlooked.</p></div>
+
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div id="relationship" class="relationship">
+        <h2 class="sub-title">Relationship and Usage of User Stories to Epics, Themes, Initiatives</h2>
+
+          <div class="main-articles"><p class="relation-parag">In many contexts user stories are used and also summarized in groups for semantic and organizational reasons. The different usages depend on the point-of-view, e.g. either looking from a user perspective as
+            product owner in relation to features or a company perspective in relation to task organization.</p>
+          </br></div>
+
+          <div class="main-articles"><p class="relation-parag">While some suggest to use 'epic' and 'theme' as labels for any thinkable kind of grouping of user stories, organization management tends to use it for strong structuring and uniting work loads. For instance, Jira,
+            seems to use a hierarchically organized to-do-list, in which they named the first level of to-do-tasks 'user-story', the second level 'epics' ( grouping of user stories ) and the third level 'initiatives' ( grouping of epics ).</p></div>
+
+          <div class="main-articles"><p class="relation-parag">However, initiatives are not always present in product management development and just add another level of granularity. In Jira, 'themes' exist ( for tracking purposes ) that allow to cross-relate and group items
+            of different parts of the fixed hierarchy. </p></div>
+
+          <div class="main-articles"><p class="relation-parag"> In this usage, Jira, shifts the meaning of themes in an organization perspective: e.g how much time did we spent on developing theme "xyz". But another definition of themes is: a set of big group of stories,
+            epics, features etc for a user that forms a common semantic unit or goal. There is probably not a common definition because different approaches exist for different styles of product design and development. In these sense, some also
+            suggest to not use any kind of hard groups and hierarchies. </p></div>
+
           <div class="epic">
             <h4>Epic</h4>
-            <p>Big stories or multiple user stories that are very closely related are summarized as epics. A common explanation of epics is also: a user story that is too big for a sprint.</p>
+            <div class="main-articles"><p>Big stories or multiple user stories that are very closely related are summarized as epics. A common explanation of epics is also: a user story that is too big for a sprint.</p></div>
           </div>
+
           <div class="initiative">
             <h4>Initiative</h4>
-            <p>Multiple epics or stories grouped together hierarchically, mostly known from Jira.</p>
+            <div class="main-articles"><p>Multiple epics or stories grouped together hierarchically, mostly known from Jira.</p></div>
           </div>
+
           <div class="theme">
             <h4>Theme</h4>
-            <p>Multiple epics or stories grouped together by a common theme or semantic relationship.</p>
+            <div class="main-articles"><p>Multiple epics or stories grouped together by a common theme or semantic relationship.</p></div>s
           </div>
-        </div>
-      </section>
-      <section class="main-section">
-        <div id="story-map" class="story-map">
-        <h2>Story map</h2>
-        <p class="story-map-parag">A story map is a graphical, two-dimensional visualization of the product backlog. At the top of the map are the headings under which stories are grouped, usually referred to as 'epics' (big coarse-grained user stories), 'themes' (collections of related user stories) or 'activities'. These are identified by orienting at the user’s workflow or "the order you'd explain the behavior of the system". Vertically, below the epics, the actual story cards are allocated and ordered by priority. The first horizontal row is a "walking skeleton" and below that represents increasing sophistication. </p><p class="story-map-parag">In this way it becomes possible to describe even big systems without losing the big picture.</p><img class="story-map-img" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/User_Story_Map_in_Action.png?1539002833721" alt="User Story Map in Action"/></div></section>
-      <section class="main-section">
-        <div id="comparing" class="comparing">
-          <h2>Comparing with use cases</h2>
-          <p class="comparing-parag">A use case has been described as "a generalized description of a set of interactions between the system and one or more actors, where an actor is either a user or another system." While user stories and use caseshave some similarities, there are several differences between them.</p>
+
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div id="story-map" class="story-map">
+        <h2 class="sub-title">Story map</h2>
+
+          <div class="main-articles"><p class="story-map-parag">A story map is a graphical, two-dimensional visualization of the product backlog. At the top of the map are the headings under which stories are grouped, usually referred to as 'epics' (big coarse-grained user
+            stories), 'themes' (collections of related user stories) or 'activities'. These are identified by orienting at the user’s workflow or "the order you'd explain the behavior of the system". Vertically, below the epics, the actual story
+            cards are allocated and ordered by priority. The first horizontal row is a "walking skeleton" and below that represents increasing sophistication. </p></div>
+          <div class="main-articles"><p class="story-map-parag">In this way it becomes possible to describe even big systems without losing the big picture.</p></div>
+          <img class="story-map-img" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/User_Story_Map_in_Action.png?1539002833721"
+            alt="User Story Map in Action" />
+
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div id="comparing" class="comparing">
+        <h2 class="sub-title">Comparing with use cases</h2>
+
+          <div class="main-articles"><p class="comparing-parag">A use case has been described as "a generalized description of a set of interactions between the system and one or more actors, where an actor is either a user or another system." While user stories and use
+            caseshave some similarities, there are several differences between them.</p></div>
           <table class="section-table">
             <tr>
+              <td>&nbsp;</td>
               <th>User Stories</th>
               <th>Use Cases</th>
             </tr>
             <tr>
               <th>Similarities</th>
-              <th>Generally formulated in users' everyday language. They should help the reader understand what the software should accomplish.</th>
-              <th>Written in users' everyday business language, to facilitate stakeholder communications.</th>
+              <td>
+                <ul>
+                  <li>Generally formulated in users' everyday language. They should help the reader understand what the software should accomplish.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Written in users' everyday business language, to facilitate stakeholder communications.</li>
+                </ul>
+              </td>
             </tr>
+
             <tr>
               <th>Differences</th>
-              <th>Provide a small-scale and easy-to-use presentation of information, with little detail, thus remaining open to interpretation, through conversations with on-site customers.</th>
-              <th>Use cases organize requirements to form a narrative of how users relate to and use a system. Hence they focus on user goals and how interacting with a system satisfies the goals.</th>
-              <th>Use case flows describe sequences of interactions, and may be worded in terms of a formal model. A use case is intended to provide sufficient detail for it to be understood on its own.</th>
+              <td>
+                <ul>
+                  <li>Provide a small-scale and easy-to-use presentation of information, with little detail, thus remaining open to interpretation, through conversations with on-site customers.</li>
+                </ul>
+              <td>
+                <ul>
+                  <li>Use cases organize requirements to form a narrative of how users relate to and use a system. Hence tdey focus on user goals and how interacting with a system satisfies the goals.</li>
+                  <li>Use case flows describe sequences of interactions, and may be worded in terms of a formal model. A use case is intended to provide sufficient detail for it to be understood on its own.</li>
+                </ul>
             </tr>
             <tr>
               <th>Template</th>
-              <th>As a &#60;type of user&#62;, I can &#60;some goal&#62; so that &#60;some reason&#62;
-              </th>
-              <th>Title: "goal the use case is trying to satisfy"</th>
-              <th>Main Success Scenario: numbered list of steps</th>
-              <th>Step: "a simple statement of the interaction between the actor and a system"</th>
-              <th>Extensions: separately numbered lists, one per Extension</th>
-              <th>Extension: "a condition that results in different interactions from .. the main success scenario". An extension from main step 3 is numbered 3a, etc.</th>
-              <th>kent Beck, Alistair Cockburn, Martin Fowler and others discussed this topic further on the c2.com wiki (the home of extreme programming).</th>
+              <td>&nbsp;</td>
+              <td>
+                <ul>
+                  <li>As a &#60;type of user&#62;, I can &#60;some goal&#62; so that &#60;some reason&#62;</li>
+                  <li>Title: "goal the use case is trying to satisfy"</li>
+                  <li>Main Success Scenario: numbered list of steps<ul>
+                      <li>Step: "a simple statement of the interaction between the actor and a system"</li>
+                    </ul>
+                  </li>
+                  <li>Extensions: separately numbered lists, one per Extension <ul>
+                      <li>Extension: "a condition that results in different interactions from .. the main success scenario". An extension from main step 3 is numbered 3a, etc.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
             </tr>
           </table>
-        </div>
-      </section>
-      <section class="main-section">
-        <div id="referances" class="referances">
-          <p><a href="#">referances</a></p>
-        </div>
-      </section>
+          <div class="main-articles"><p>Kent Beck, Alistair Cockburn, Martin Fowler and others discussed this topic further on the c2.com wiki (the home of extreme programming).</p></div>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div id="referances" class="referances">
+        <p><a href="#">referances</a></p>
+      </div>
+    </section>
     </div>
-      <section class="footer grid3">
-    <footer class="bottom-nav">
-      <p>This page is based on a Wikipedia article</p>
-      <p><a href="#">contact</a></p>
-    </footer>
-  </section>
-</main>
-<body>
+
+    <section class="footer grid3">
+      <footer class="bottom-nav">
+        <p>This page is based on a Wikipedia article</p>
+        <p><a href="#">contact</a></p>
+      </footer>
+    </section>
+  </main>
+
+  <body>
 </html>
