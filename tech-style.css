@@ -9,19 +9,19 @@
   font-family: "Lato";
 }
 .grid1{
-  background-color: :lightSkyBlue;
+  background-color:#615F5F;
   grid-row:1/1;
   grid-area: header;
 
 }
 .grid2{
-  background-color: lightsalmon;
+  background-color: #201E20;
   grid-row: 1/2;
   grid-area: content;
 
 }
 .grid3{
-  background-color: lightpink;
+  background-color: #3A3538;
   grid-row:2/2;
   grid-column:2/2;
   grid-area: footer;
@@ -30,10 +30,10 @@
 .grid_master{
   display: grid;
   grid-template-rows: 20% 80%;
-  grid-gap: 10px;
+
   grid-template-areas:
      "header content"
-     "footer footer ";
+     "header footer ";
 }
 
 .sidebar{
@@ -74,23 +74,39 @@
 }
 
 .main-title{
-  font-size: 3em;
-  line-height: 1.5;
+  font-size: 41px;
+  line-height: 57px;
   padding-left: 5%;
+  color: #f7f7f7;
   border: 1px solid red;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .main-articles{
-  line-height: 1.5;
+  line-height: 27px;
   padding-top: 3%;
   margin-left: 2%;
-  font-size: 1.2em;
-  border: 1 solid red;
+  font-size: 17px;
+  font-weight: 400;
+  color: #f7f7f7;
+  border: 1 solid black;
 }
 .sub-title{
-  line-height: 1.5;
-  padding-top: 2%;
-  font-size: 1.5em;
+  font-size: 41px;
+  line-height: 57px;
+  padding-left: 5%;
   text-transform: capitalize;
-
+  color: #f7f7f7;
+  font-weight: 400;
+  border: 1px solid red;
+}
+.header3{
+  line-height: 43px;
+  padding-top: 2%;
+  color: #f7f7f7;
+  margin-left: 2.5%;
+  font-size: 29;
+  font-weight: 400;
+  text-transform:capitalize;
 }
