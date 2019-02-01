@@ -8,10 +8,12 @@
   height: auto;
   font-family: "Lato";
 }
+/*
 .grid1{
   background-color:#615F5F;
   grid-row:1/1;
   grid-area: header;
+  border:1px solid red;
 
 }
 .grid2{
@@ -30,26 +32,20 @@
 .grid_master{
   display: grid;
   grid-template-rows: 20% 80%;
-
   grid-template-areas:
      "header content"
      "header footer ";
 }
-
+*/
 .sidebar{
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  border:1px solid red;
-
+  position: fixed;
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color:
+  border:1px solid yellow;
 }
-.main_map{
-  display: flex;
-  flex-direction: column;
-  border:1px solid green;
-
-}
-
 .header-menu-content {
   margin: 3%;
   list-style: none;
@@ -62,6 +58,15 @@
   margin-right: 2%;
   border: 1px solid red;
 }
+
+.main_map{
+  display: flex;
+  flex-direction: column;
+  border:1px solid green;
+
+}
+
+
 .sub-nav-list{
   list-style: none;
   margin-left: 15%;
