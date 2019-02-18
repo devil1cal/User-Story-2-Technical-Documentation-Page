@@ -37,15 +37,45 @@
      "header footer ";
 }
 */
+.allTheThingsIhate{
+
+}
+/*---- main flexs ----*/
+.allTheThingsIhate{
+  }
+
 .sidebar{
   display: flex;
   position: fixed;
   float: left;
   width: 20%;
   height: 100%;
-  background-color:
   border:1px solid yellow;
+  background-color: #ffffff;
+  overflow: auto;
+  z-index: 1;
 }
+
+.main_map{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  width: 80%;
+  height: 100%;
+  border:1px solid green;
+  background-color: #ffffff;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  background-color: #ffffff;
+  border:1px solid green;
+}
+/*---- main flexs ----*/
+
+/*---- navigation bar ----*/
 .header-menu-content {
   margin: 3%;
   list-style: none;
@@ -58,15 +88,6 @@
   margin-right: 2%;
   border: 1px solid red;
 }
-
-.main_map{
-  display: flex;
-  flex-direction: column;
-  border:1px solid green;
-
-}
-
-
 .sub-nav-list{
   list-style: none;
   margin-left: 15%;
@@ -77,12 +98,14 @@
   line-height: 1.5;
   text-transform: capitalize;
 }
+/*---- navigation bar ----*/
 
+/*---- fonts ----*/
 .main-title{
   font-size: 41px;
   line-height: 57px;
   padding-left: 5%;
-  color: #f7f7f7;
+  color: ##4d4e53;
   border: 1px solid red;
   font-weight: 400;
   text-transform: capitalize;
@@ -94,7 +117,7 @@
   margin-left: 2%;
   font-size: 17px;
   font-weight: 400;
-  color: #f7f7f7;
+  color: #4d4e53;
   border: 1 solid black;
 }
 .sub-title{
@@ -102,16 +125,71 @@
   line-height: 57px;
   padding-left: 5%;
   text-transform: capitalize;
-  color: #f7f7f7;
+  color: #4d4e53;
   font-weight: 400;
   border: 1px solid red;
 }
 .header3{
   line-height: 43px;
   padding-top: 2%;
-  color: #f7f7f7;
+  color: #4d4e53;
   margin-left: 2.5%;
   font-size: 29;
   font-weight: 400;
   text-transform:capitalize;
 }
+.history-list{
+  line-height: 30px;
+  padding-top: 3%;
+  margin-left: 2%;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4d4e53;
+  border: 1 solid black;
+}
+
+.section-table{
+  /* after the grid table */
+}
+/*---- fonts ----*/
+
+/*---- img ----*/
+/*---- img ----*/
+
+/*---- specials ----*/
+.history-list ul{
+  margin-left: 40px;
+}
+
+.background_color{
+border:1px solid grey;
+border-width: 15px 25px 20px 15px;
+background-color: grey;
+margin-left: 40px;
+margin-top: 25px;
+margin-right: 40px;
+}
+
+.backgepic{
+  border:1px solid grey;
+  background-color: grey;
+  border-width: 15px 25px 20px 15px;
+  margin-left: 25px;
+  margin-right: 40px;
+  margin-top: -5px;
+}
+.backgepicL{
+  border:1px solid grey;
+  background-color: grey;
+  border-width: 15px 25px 20px 15px;
+  margin-left: 25px;
+  margin-right: 40px;
+  margin-top: -5px;
+  margin-bottom: 25px;
+}
+
+
+/*---- specials ----*/
+
+/*---- media quaries ----*/
+/*---- media quaries ----*/
