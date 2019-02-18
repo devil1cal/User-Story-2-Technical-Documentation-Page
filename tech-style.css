@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.body{
+.body, .html{
   width: 100%;
   height: auto;
   font-family: "Lato";
+  margin: 0;
 }
 /*
 .grid1{
@@ -50,9 +51,8 @@
   float: left;
   width: 20%;
   height: 100%;
-  border:1px solid yellow;
-  background-color: #ffffff;
-  overflow: auto;
+  background-color:#DCD0C0;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -62,31 +62,44 @@
   margin-left: 20%;
   width: 80%;
   height: 100%;
-  border:1px solid green;
-  background-color: #ffffff;
+  background-color: #DCD0C0;
 }
 
 .footer{
   display: flex;
   flex-direction: column;
   margin-left: 20%;
-  background-color: #ffffff;
-  border:1px solid green;
+  width: 80%;
+  height: 250px;
+  background-color: #373737;
+
 }
 /*---- main flexs ----*/
 
 /*---- navigation bar ----*/
 .header-menu-content {
-  margin: 3%;
+  margin-left: 3%;
   list-style: none;
-  border:1px solid red;
+  border-right: 1px solid grey;
+}
+
+.nav-sp{
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 1.5;
+  text-transform: capitalize;
+  padding: 5%;
+}
+.com-tem-nav{
+  font-size:1.2em;
 }
 .nav-li{
   margin-top: 3%;
   margin-bottom: 3%;
   margin-left: 2%;
   margin-right: 2%;
-  border: 1px solid red;
+  border-top: 1px solid grey;
+
 }
 .sub-nav-list{
   list-style: none;
@@ -97,18 +110,29 @@
   font-size: 1.5em;
   line-height: 1.5;
   text-transform: capitalize;
+  color:#4d4e53;
 }
+.nav-li:hover{
+  background-color:#d8cbba;
+  transition: 1;
+}
+.com-tem-nav{
+  font-size:1.2em;
+  padding-left: 25px;
+}
+
 /*---- navigation bar ----*/
 
 /*---- fonts ----*/
+
 .main-title{
-  font-size: 41px;
-  line-height: 57px;
-  padding-left: 5%;
-  color: ##4d4e53;
-  border: 1px solid red;
-  font-weight: 400;
-  text-transform: capitalize;
+font-size: 41px;
+line-height: 57px;
+padding-left: 5%;
+padding-top: 2%;
+text-transform: capitalize;
+color: #4d4e53;
+font-weight: 700;
 }
 
 .main-articles{
@@ -118,35 +142,37 @@
   font-size: 17px;
   font-weight: 400;
   color: #4d4e53;
-  border: 1 solid black;
+  border: 1 solid yellow;
 }
 .sub-title{
-  font-size: 41px;
-  line-height: 57px;
-  padding-left: 5%;
-  text-transform: capitalize;
-  color: #4d4e53;
-  font-weight: 400;
-  border: 1px solid red;
-}
-.header3{
   line-height: 43px;
   padding-top: 2%;
   color: #4d4e53;
   margin-left: 2.5%;
-  font-size: 29;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 30px;
   text-transform:capitalize;
 }
+.under-sub-title{
+  line-height: 18px;
+  padding-top: 2%;
+  color: #black;
+  margin-left: 2.5%;
+  font-weight: 400;
+  font-size: 19px;
+  text-transform:capitalize;
+}
+
 .history-list{
-  line-height: 30px;
+  line-height: 2.3em;
   padding-top: 3%;
   margin-left: 2%;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   color: #4d4e53;
   border: 1 solid black;
 }
+
 
 .section-table{
   /* after the grid table */
@@ -154,42 +180,122 @@
 /*---- fonts ----*/
 
 /*---- img ----*/
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+.myModal{
+
+
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: relative;; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+@keyframes zoom {
+  from {transform: scale(0.1)}
+  to {transform: scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
 /*---- img ----*/
 
 /*---- specials ----*/
+
 .history-list ul{
   margin-left: 40px;
 }
 
 .background_color{
-border:1px solid grey;
+border:1px solid #E7DFDD;
 border-width: 15px 25px 20px 15px;
-background-color: grey;
+background-color: #E7DFDD;
 margin-left: 40px;
 margin-top: 25px;
 margin-right: 40px;
 }
 
 .backgepic{
-  border:1px solid grey;
-  background-color: grey;
+  border:1px solid #E7DFDD;
+  background-color: #E7DFDD;
   border-width: 15px 25px 20px 15px;
   margin-left: 25px;
   margin-right: 40px;
   margin-top: -5px;
 }
 .backgepicL{
-  border:1px solid grey;
-  background-color: grey;
+  border:1px solid #E7DFDD;
+  background-color: #E7DFDD;
   border-width: 15px 25px 20px 15px;
   margin-left: 25px;
   margin-right: 40px;
   margin-top: -5px;
   margin-bottom: 25px;
 }
+.story-map{
 
+}
 
 /*---- specials ----*/
 
 /*---- media quaries ----*/
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+
 /*---- media quaries ----*/
