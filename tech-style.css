@@ -84,11 +84,13 @@
 }
 
 .nav-sp{
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
   font-size: 2em;
-  line-height: 1.5;
+  line-height: 1.2;
   text-transform: capitalize;
-  padding: 5%;
+
 }
 .com-tem-nav{
   font-size:1.2em;
@@ -172,30 +174,49 @@ font-weight: 700;
   color: #4d4e53;
   border: 1 solid black;
 }
-
-
 .section-table{
-  /* after the grid table */
+  line-height: 27px;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 17px;
+  font-weight: 400;
+  color: #4d4e53;
 }
+
+.footer, a{
+  justify-content:space-between;
+  text-decoration:none;
+  line-height: 40px;
+  padding-top: 2%;
+  color: #d8cbba;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform:capitalize;
+  text-align: center;
+
+}
+
+
 /*---- fonts ----*/
-
 /*---- img ----*/
+.myModal{
+display: flex;
+float: right;
+position: relative;
+border:1px solid green;
+margin-top:7%;
 
+}
 #myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
-
 #myImg:hover {opacity: 0.7;}
-.myModal{
-
-
-}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: relative;; /* Stay in place */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
@@ -213,6 +234,17 @@ font-weight: 700;
   display: block;
   width: 80%;
   max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 /* Add Animation */
 .modal-content {
@@ -245,14 +277,7 @@ font-weight: 700;
   text-decoration: none;
   cursor: pointer;
 }
-
-
-
-
-
-
 /*---- img ----*/
-
 /*---- specials ----*/
 
 .history-list ul{
@@ -285,9 +310,50 @@ margin-right: 40px;
   margin-top: -5px;
   margin-bottom: 25px;
 }
-.story-map{
+/*-----table-----*/
+.table-ele{
+  padding-top: 25px;
+}
+
+.section-table{
+  border: 1px solid black;
+  border-collapse:separate;
+}
+
+th {
+  padding: 6px;
+  text-align: left;
+  border:1px solid black;
 
 }
+td{
+  padding: 2.5%;
+  text-align: left;
+  border:1px solid black;
+}
+
+.section-table-list{
+  text-decoration: none;
+  list-style-type:disc;
+  line-height:1.5;
+}
+.sub-table{
+  padding-left: 4%;
+}
+/*---table----*/
+.last-p{
+  margin-bottom: 25px;
+}
+.footer{
+
+
+}
+.references{
+
+
+}
+
+
 
 /*---- specials ----*/
 
@@ -298,4 +364,8 @@ margin-right: 40px;
     width: 100%;
   }
 
+  @media only screen and (max-width: 648px){
+    .modal-content {
+      width: 100%;
+    }
 /*---- media quaries ----*/
