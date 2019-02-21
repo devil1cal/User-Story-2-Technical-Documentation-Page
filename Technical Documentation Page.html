@@ -10,11 +10,39 @@
 </head>
 
 <body>
-  <main class="allTheThingsIhate">
+  <main id="main-doc" class="allTheThingsIhate">
+
+
+    <div id"secret-nav" class="secret-nav">
+      <div class="secret-span">
+          <a href="#" onclick="open_click()">
+          <span class="open-click">user story</span>
+          <svg class="btn-close" onclick="close_click()" width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+          </svg>
+
+        </div>
+          <nav id="secret-main-nav" class="secret-main-nav">
+          <a class="nav-menu" href="#introduction">introduction</a>
+          <a class="nav-menu" href="#history">history</a>
+          <a class="nav-menu" href="#examples">examples</a>
+          <a class="nav-menu" href="#usage">usage</a>
+          <a class="nav-menu" href="#benefits">benefits</a>
+          <a class="nav-menu" href="#limitations">limitations</a>
+          <a class="nav-menu" href="#relationship">Relationship & Usage of User Stories to Epics, Themes, Initiatives</a>
+          <a class="nav-menu" href="#story-map">Story map</a>
+          <a class="nav-menu" href="#comparing">Comparing with use cases</a>
+          <a class="nav-menu" href="#references">references</a>
+        </nav>
+     </div>
+
+
+
     <section class="sidebar">
       <div id="header" class="header" tabindex="0">
         <nav class="sidebar">
-
           <ul class="header-menu-content">
             <li><span class="nav-sp">user story</span></li>
             <li class="nav-li"><a class="nav-menu" href="#introduction">introduction</a></li>
@@ -27,16 +55,18 @@
             <li class="nav-li"><a class="nav-menu" href="#usage">usage</a></li>
             <li class="nav-li"><a class="nav-menu" href="#benefits">benefits</a></li>
             <li class="nav-li"><a class="nav-menu" href="#limitations">limitations</a></li>
-            <li class="nav-li"><a class="nav-menu" href="#relationship">Relationship and Usage of User Stories to Epics, Themes, Initiatives</a></li>
+            <li class="nav-li"><a class="nav-menu" href="#relationship">Relationship & Usage of User Stories to Epics, Themes, Initiatives</a></li>
             <li class="nav-li"><a class="nav-menu" href="#story-map">Story map</a></li>
             <li class="nav-li"><a class="nav-menu" href="#comparing">Comparing with use cases</a></li>
             <li class="nav-li"><a class="nav-menu" href="#references">references</a></li>
           </ul>
       </div>
+
+
     </section>
 
     <div class="main_map">
-      <section class=" main-section">
+      <section class="main-section">
         <div id="introduction" class="introduction">
           <h1 class="main-title">introduction</h1>
           <div class="main-articles">
@@ -383,10 +413,32 @@
 
 
   <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
+//upper navigation bar
+function open_click(){
+  documetn.getElementById("secret-main-nav").style.width="50%";
+}
+function open_click(){
+  documetn.getElementById("secret-main-nav").style.width="0";
+}
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
+/*
+function navFunc(){
+var x= document.getElementById("secret-nav");
+if (x.className === "secret-nav"){
+  x.className +="responsive";
+}
+  else {
+    x.className ="secret-nav";
+  }
+}*/
+
+
+
+
+
+
+    // the modal
+    var modal = document.getElementById('myModal');
     var img = document.getElementById('myImg');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -395,10 +447,7 @@
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
     }
-
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";

@@ -124,7 +124,60 @@
 }
 
 /*---- navigation bar ----*/
+/*---- secret nav bar ----*/
+.secret-nav{
+  border:1px solid red;
+  background-color: #DCD0C0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  display: none;
+  position: fixed;
+}
+.secret-nav li{
+  text-align: center;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
 
+.secret-nav a {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  color: #4d4e53;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.secret-main-nav a:hover {
+  background-color: #d8cbba;
+  color: black;
+}
+.secret-span{
+  background-color: #373737;
+  border:1px solid yellow;
+  width: 100%;
+  height: auto;
+}
+.secret-span span{
+  color: #ddd;
+
+  margin-top: -15px;
+  border:1px solid red;
+}
+.secret-span svg{
+margin-left: 15px;
+align-self:  center;
+border:1px solid white;
+
+}
+
+
+}
+
+/*----secret nav bar----*/
 /*---- fonts ----*/
 
 .main-title{
@@ -280,6 +333,7 @@ margin-top:7%;
 /*---- img ----*/
 /*---- specials ----*/
 
+
 .history-list ul{
   margin-left: 40px;
 }
@@ -359,13 +413,31 @@ td{
 
 /*---- media quaries ----*/
 /* 100% Image Width on Smaller Screens */
+
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
+  @media only screen and (max-width: 700px){
+    .secret-nav{
+      display: block;
 
-  @media only screen and (max-width: 648px){
-    .modal-content {
+    }
+    .sidebar{
+      display: none;
+    }
+
+    .main_map{
+      margin:0;
+      width: 100%
+    }
+
+    .footer{
+      margin:0;
       width: 100%;
     }
+
+
+
+
 /*---- media quaries ----*/
