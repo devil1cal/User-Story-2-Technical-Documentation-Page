@@ -12,7 +12,23 @@
 <body>
   <main id="main-doc" class="allTheThingsIhate">
 
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">User Story</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="nav-menu" href="#introduction">introduction</a>
+        <a class="nav-menu" href="#history">history</a>
+        <a class="nav-menu" href="#examples">examples</a>
+        <a class="nav-menu" href="#usage">usage</a>
+        <a class="nav-menu" href="#benefits">benefits</a>
+        <a class="nav-menu" href="#limitations">limitations</a>
+        <a class="nav-menu" href="#relationship">Relationship & Usage of User Stories to Epics, Themes, Initiatives</a>
+        <a class="nav-menu" href="#story-map">Story map</a>
+        <a class="nav-menu" href="#comparing">Comparing with use cases</a>
+        <a class="nav-menu" href="#references">references</a>
+      </div>
+    </div>
 
+<!--
     <div id"secret-nav" class="secret-nav">
       <div class="secret-span">
           <a href="#" onclick="open_click()">
@@ -22,7 +38,6 @@
             <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
             <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
           </svg>
-
         </div>
           <nav id="secret-main-nav" class="secret-main-nav">
           <a class="nav-menu" href="#introduction">introduction</a>
@@ -36,7 +51,7 @@
           <a class="nav-menu" href="#comparing">Comparing with use cases</a>
           <a class="nav-menu" href="#references">references</a>
         </nav>
-     </div>
+     </div> -->
 
 
 
@@ -414,12 +429,36 @@
 
   <script>
 //upper navigation bar
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+/*
 function open_click(){
   documetn.getElementById("secret-main-nav").style.width="50%";
 }
 function open_click(){
   documetn.getElementById("secret-main-nav").style.width="0";
-}
+}*/
 
 /*
 function navFunc(){
