@@ -87,9 +87,11 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: 2em;
-  line-height: 1.2;
   text-transform: capitalize;
+  font-size: 2em;
+  line-height: 1.5;
+  color: #4d4e53;
+  font-weight: 700;
 
 }
 .com-tem-nav{
@@ -226,17 +228,16 @@ border:1px solid white;
 
 .main-title{
 font-size: 41px;
-line-height: 57px;
+line-height: 1.8;
 padding-left: 5%;
-padding-top: 2%;
 text-transform: capitalize;
 color: #4d4e53;
 font-weight: 700;
+
 }
 
 .main-articles{
-  line-height: 27px;
-  padding-top: 3%;
+  line-height: 1.5;
   margin-left: 2%;
   font-size: 17px;
   font-weight: 400;
@@ -244,8 +245,7 @@ font-weight: 700;
   border: 1 solid yellow;
 }
 .sub-title{
-  line-height: 43px;
-  padding-top: 2%;
+  line-height: 2;
   color: #4d4e53;
   margin-left: 2.5%;
   font-weight: 600;
@@ -253,18 +253,16 @@ font-weight: 700;
   text-transform:capitalize;
 }
 .under-sub-title{
-  line-height: 18px;
-  padding-top: 2%;
-  color: #black;
+  line-height: 3;
+  color: #4d4e53;
   margin-left: 2.5%;
-  font-weight: 400;
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 20px;
   text-transform:capitalize;
 }
 
 .history-list{
   line-height: 2.3em;
-  padding-top: 3%;
   margin-left: 2%;
   font-size: 17px;
   font-weight: 300;
@@ -300,8 +298,8 @@ font-weight: 700;
 display: flex;
 float: right;
 position: relative;
-border:1px solid green;
-margin-top:7%;
+
+margin-top:20px;
 
 }
 #myImg {
@@ -387,27 +385,22 @@ border:1px solid #E7DFDD;
 border-width: 15px 25px 20px 15px;
 background-color: #E7DFDD;
 margin-left: 40px;
-margin-top: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
 margin-right: 40px;
 }
 
-.backgepic{
+.backgepic, .backgepicL{
   border:1px solid #E7DFDD;
   background-color: #E7DFDD;
   border-width: 15px 25px 20px 15px;
   margin-left: 25px;
   margin-right: 40px;
-  margin-top: -5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
 }
-.backgepicL{
-  border:1px solid #E7DFDD;
-  background-color: #E7DFDD;
-  border-width: 15px 25px 20px 15px;
-  margin-left: 25px;
-  margin-right: 40px;
-  margin-top: -5px;
-  margin-bottom: 25px;
-}
+
 /*-----table-----*/
 .table-ele{
   padding-top: 25px;
@@ -465,13 +458,17 @@ td{
   @media only screen and (max-width: 700px){
     .secret-nav{
       display: block;
-
     }
     .dropdown{
       display: inline-block;
+      position: fixed;
+      z-index: 2;
     }
     .sidebar{
       display: none;
+    }
+    .introduction{
+      margin-top: 60px;
     }
 
     .main_map{
@@ -484,6 +481,40 @@ td{
       width: 100%;
     }
 
+    .main-title{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+
+    }
+    .sub-title{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .under-sub-title{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .story-map h1{
+      align-self: center;
+      padding:0;
+      margin:0;
+    }
+    .main-articles{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0;
+
+    }
+
+
+
+    .myModal{
+      margin-top:15px;
+
+    }
 }
 
 
